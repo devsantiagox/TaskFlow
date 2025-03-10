@@ -1,13 +1,25 @@
-### Aplicación CRUD con MERN Stack y JWT
+# 🌟 Aplicación CRUD con MERN Stack y JWT
 
-Este es un proyecto de aplicación web utilizando React, con un backend en Node.js usando Express y MongoDB como base de datos (MERN Stack).
+Este proyecto es una aplicación web basada en el stack **MERN** (MongoDB, Express, React y Node.js), con autenticación mediante **JSON Web Tokens (JWT)**.
 
-### Instalación con Docker Compose (Recomendado) 🚀
+## 🚀 Características
+
+- **Frontend:** React con Vite para una experiencia rápida y moderna.
+- **Backend:** Node.js con Express y autenticación basada en JWT.
+- **Base de datos:** MongoDB.
+- **Contenedores:** Soporte para Docker y Docker Compose.
+- **Autenticación segura:** Manejo de usuarios con JWT.
+
+---
+
+## 📦 Instalación y Ejecución
+
+### 🔹 Opción 1: Usando Docker Compose (Recomendado)
 
 1. Clona el repositorio:
 
    ```sh
-   git clone https://github.com/devsantiagox/mern-tasks-auth
+   git clone https://github.com/devsantiagox/TaskFlow
    cd mern-tasks-auth
    ```
 
@@ -18,16 +30,21 @@ Este es un proyecto de aplicación web utilizando React, con un backend en Node.
    ```
 
 3. Inicia la aplicación en modo desarrollo:
+
    ```sh
    npm run dev
    ```
 
-### Despliegue 🌐
+La aplicación estará disponible en [http://localhost:4000](http://localhost:4000).
+
+---
+
+### 🔹 Opción 2: Instalación Manual
 
 1. Clona el repositorio:
 
    ```sh
-   git clone https://github.com/devsantiagox/mern-tasks-auth
+   git clone https://github.com/devsantiagox/TaskFlow
    cd mern-tasks-auth
    ```
 
@@ -37,15 +54,42 @@ Este es un proyecto de aplicación web utilizando React, con un backend en Node.
    npm install
    ```
 
-3. Construye la aplicación:
+3. Configura las variables de entorno creando un archivo **.env** basado en **.env.example**.
+
+4. Asegúrate de tener una instancia de **MongoDB** en ejecución.
+
+5. Construye la aplicación:
 
    ```sh
    npm run build
    ```
 
-4. Inicia la aplicación:
+6. Inicia la aplicación en producción:
+
    ```sh
    npm start
    ```
 
-> **Nota:** Necesitas tener una base de datos MongoDB en funcionamiento.
+La aplicación se ejecutará en [http://localhost:3000](http://localhost:3000).
+
+---
+
+## 🌐 Configuración
+
+El archivo **.env** debe contener las siguientes variables:
+
+```env
+FRONTEND_URL=http://localhost:5173
+MONGO_URI=mongodb://localhost:27017/tu_base_de_datos
+JWT_SECRET=tu_secreto_seguro
+PORT=4000
+```
+
+> **Nota:** Asegúrate de reemplazar los valores según tu entorno.
+
+---
+
+## 📜 Licencia
+
+Este proyecto está bajo la licencia **MIT**. ¡Siéntete libre de contribuir y mejorar! 🚀
+
